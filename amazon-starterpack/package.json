@@ -2,27 +2,18 @@
   "name": "mini-amazon",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://arun-kumar-0308.github.io/check-deploy",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "gh-pages": "^5.0.0"
-  }
-}
-
-"scripts": {
-  "start": "react-scripts start",
-  "build": "react-scripts build",
-  "test": "react-scripts test",
-  "eject": "react-scripts eject",
-  "predeploy": "yarn build",
-  "deploy": "gh-pages -d build"
-}
-
-
+  },
   "eslintConfig": {
     "extends": [
       "react-app",

@@ -1,0 +1,80 @@
+.s-container{
+    position: relative;
+}
+.s-container .swiper{
+    width: 70%;
+    height: 12rem;
+    position: unset;
+}
+.s-container .swiper-slide{
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow:hidden ;
+}
+.s-container .swiper-button-prev{
+    left: 6rem;
+}
+.s-container .swiper-button-next{
+    right: 6rem;
+}
+.s-container .swiper-button-prev,.s-container .swiper-button-next{
+    color: black;
+}
+
+.left-s{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+
+}
+.name>:first-child{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.left-s>:nth-child(2){
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.left-s>:nth-child(3){
+    font-size: 0.8rem;
+     border: 1px solid var(--black);
+     padding: 5px 10px;
+     width: max-content;
+     border-radius: 15px;
+}
+.img-liquid{
+  left: 40px;
+  position: relative;
+    
+}
+
+@media screen and (max-width:856px) {
+    .s-container .swiper{
+        width: 50rem;
+        height: 10rem;
+        margin-left: 10px;
+    }
+    .s-container .swiper-button-prev ,
+    .s-container .swiper-button-next{
+        display: none;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .s-container .swiper{
+        width: 22rem;
+        height: 10rem;
+        margin-left: 20px;
+       
+    }
+}
+
+
